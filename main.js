@@ -29,6 +29,23 @@ for (var i = 0; i<totalVolunteers; i++){
 
 console.log(volunteers);
 
-// var listVictims = Victims["name"]
+var viclist ='';
 
-// alert('There are ' + totalVictims + ' victims and ' + totalVolunteers + ' volunteers!');
+
+
+for (var i = 0; i < totalVictims; i++){
+	viclist += victims[i]["name"] + ' ';
+};
+
+console.log(viclist);
+
+var volList = '';
+
+for (var i = 0; i < totalVolunteers; i++){
+	volList += volunteers[i]["name"] + ' ';
+};
+
+console.log(volList);
+
+alert('There are ' + totalVictims + ' victims and ' + totalVolunteers + ' volunteers!' + 
+	'The victims are ' + viclist + ' and the volunteers are ' + volList);
